@@ -6,6 +6,7 @@ if (isset($_POST['post_button'])){
 
     $content = $_POST['content'];
 
+    $sql = "INSERT INTO posts (user_id, content) VALUES (1, $content)";
 
 
 
