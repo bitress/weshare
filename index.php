@@ -1,5 +1,14 @@
 <?php
 
+include_once 'includes/connection.php';
+
+if (isset($_POST['post_button'])){
+
+    $content = $_POST['content'];
+
+
+}
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,25 +34,12 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#">My Friends</a>
                 </li>
             </ul>
             <div class="d-flex" role="search">
-               <a class="nav-link" href="logout.php">Logout</a>
+                <a class="btn btn-outline btn-success" href="logout.php">My Profile</a>
+                <a class="nav-link" href="logout.php">Logout</a>
             </di>
         </div>
     </div>
@@ -61,11 +57,10 @@
                         <form method="post" action="<?= htmlentities($_SERVER['PHP_SELF']); ?>">
                             <div class="form-group mb-3">
                                 <label>What is going on?</label>
-                                <textarea class="form-control" rows="5"></textarea>
+                                <textarea class="form-control" name="content" rows="5"></textarea>
                             </div>
-
                             <div class="col-md-3">
-                                <button type="submit" name="post" class="btn btn-success">Post</button>
+                                <button type="submit" name="post_button" class="btn btn-success">Post</button>
                             </div>
                         </form>
                     </div>
