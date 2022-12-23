@@ -7,6 +7,7 @@ if (isset($_POST['post_button'])){
     $content = $_POST['content'];
 
 
+
 }
 
 ?>
