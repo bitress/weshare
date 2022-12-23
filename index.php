@@ -42,10 +42,9 @@
                     <a class="nav-link disabled">Disabled</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="d-flex" role="search">
+               <a class="nav-link" href="logout.php">Logout</a>
+            </di>
         </div>
     </div>
 </nav>
@@ -56,7 +55,6 @@
         <div class="row gx-5">
             <div class="col-md-8">
 
-                ds
                 <!--      Add post          -->
                 <div class="card">
                     <div class="card-body">
