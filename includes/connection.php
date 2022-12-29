@@ -11,6 +11,3 @@ if ($con->connect_errno){
     echo "Error: ". $con->connect_error;
 }
 session_start();
-
-
-
