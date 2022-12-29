@@ -68,12 +68,12 @@ if (isset($_POST['like_btn'])){
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">My Friends</a>
-                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">My Friends</a>-->
+<!--                </li>-->
             </ul>
             <div class="d-flex" role="search">
-                <a class="btn btn-outline btn-success" href="logout.php">My Profile</a>
+<!--                <a class="btn btn-outline btn-success" href="logout.php">My Profile</a>-->
                 <a class="nav-link" href="logout.php">Logout</a>
                 </di>
             </div>
